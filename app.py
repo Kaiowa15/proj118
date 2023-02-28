@@ -30,14 +30,14 @@ def predict():
 
 
 # Criando uma API para salvar a avaliação. O usuário clica no botão Salvar
-@app.route('/' , methods = [''])
+@app.route('/save' , methods = ['POST'])
 def save():
 
     # extraindo data , nome do produto , avaliação e sentimento associado aos dados JSON
-    date = request.json.get('')
-    product = request.json.get('')
-    review = request.json.get('')
-    sentiment = request.json.get('')
+    date = request.json.get('data')
+    product = request.json.get('product')
+    review = request.json.get('review')
+    sentiment = request.json.get('sentiment')
 
     # criando uma variável final separada por vírgulas
     data_entry = date + "," + product + "," + review + "," + sentiment

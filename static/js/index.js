@@ -97,7 +97,7 @@ $(document).ready(function(){
     })
 
     //  verifique se o botão Enviar em 'camera' foi clicado e obtenha a avaliação apropriada
-    $('').click(function(){
+    $('#c_button').click(function(){
 
         review = $('').val()
         input_data = {'customer_review' : review}
@@ -107,7 +107,7 @@ $(document).ready(function(){
     })
 
     //  verifique se o botão Enviar em 'headphones' foi clicado e obtenha a avaliação apropriada
-    $('').click(function(){
+    $('h_button').click(function(){
 
         review = $('').val()
         input_data = {'customer_review' : review}
@@ -117,7 +117,7 @@ $(document).ready(function(){
     })
 
     //  verifique se o botão Enviar em 'videogame' foi clicado e obtenha a avaliação apropriada
-    $('').click(function(){
+    $('v_button').click(function(){
 
         review = $('').val()
         input_data = {'customer_review' : review}
